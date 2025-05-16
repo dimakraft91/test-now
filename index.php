@@ -5,29 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
     <link rel="stylesheet" href="css/main.css">
     <title>संक्षिप्त सर्वेक्षण पूरा करें और कुल $346 मूल्य के 3 बोनस सुनिश्चित रूप से प्राप्त करें, साथ ही 3 नई Toyota Camry XSE कारों के लकी ड्रा में स्वचालित रूप से भाग लें।</title>    
-
-   <script>
-        // Генерация рандомного купона
-
-        function generateRandomTicketNumber(length) {
-            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // Латиница и цифры
-            let result = '';
-            for (let i = 0; i < length; i++) {
-                const randomIndex = Math.floor(Math.random() * characters.length);
-                result += characters[randomIndex];
-            }
-            return result;
-        }
-
-        document.addEventListener('DOMContentLoaded', function() {
-            const ticketNumberElement = document.querySelector('.ticket__number-text');
-            const randomTicketNumber = generateRandomTicketNumber(7); // Генерируем 7 символов
-            ticketNumberElement.textContent = randomTicketNumber; // Устанавливаем сгенерированный номер
-        });
-
-// Генерация рандомного купона
-    </script>
-    <script defer>
+    <script>
         // Обработчик события для кнопки по классу
         document.querySelector('.start__body-btn').addEventListener('click', function() {
             // Скрываем секцию вопросов
@@ -942,6 +920,28 @@ document.addEventListener('DOMContentLoaded', function() {
             moment.locale(document.documentElement.lang.split('-')[0]);
             endDateEl.innerText = moment().add(3, 'days').format('LL');
         }
+    </script>
+
+<script defer>
+        // Генерация рандомного купона
+
+        function generateRandomTicketNumber(length) {
+            const characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789'; // Латиница и цифры
+            let result = '';
+            for (let i = 0; i < length; i++) {
+                const randomIndex = Math.floor(Math.random() * characters.length);
+                result += characters[randomIndex];
+            }
+            return result;
+        }
+
+        document.addEventListener('DOMContentLoaded', function() {
+            const ticketNumberElement = document.querySelector('.ticket__number-text');
+            const randomTicketNumber = generateRandomTicketNumber(7); // Генерируем 7 символов
+            ticketNumberElement.textContent = randomTicketNumber; // Устанавливаем сгенерированный номер
+        });
+
+// Генерация рандомного купона
     </script>
     
    
